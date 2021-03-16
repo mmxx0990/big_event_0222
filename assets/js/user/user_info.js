@@ -45,13 +45,13 @@ $(function () {
             type: 'post',
             data: $(this).serialize(),
             success: (res) => {
-                console.log(res);
+                // console.log(res);
                 if (res.status !== 0) {
                     return layer.msg("用户信息修改失败！")
                 }
                 layer.msg("恭喜您，用户信息修改成功！")
                 //    调用父页面中的更新用户信息和头像方法
-                window.parent.getUserInfo();
+                window.parent.getUserInof();
             }
         })
     })
